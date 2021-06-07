@@ -1,0 +1,17 @@
+.footer {
+    background-color: rgb(86, 88, 90);
+    height: 60px;
+    box-shadow: 14px 4px 8px 9px rgb(219, 215, 215);   
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.copy_right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffff;
+    margin-left: 10px;
+
+}

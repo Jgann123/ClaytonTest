@@ -1,0 +1,76 @@
+button{
+    display: flex;
+    border-radius: 10px;
+    color: #ffff;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 30px;
+    background-color:  rgb(29, 129, 201);
+}
+
+button:hover{
+    display: flex;
+    border-radius: 10px;
+    color: #ffff;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    background-color:  rgb(84, 151, 199);
+}
+
+
+.buttons_div{
+    display: flex;
+    justify-content: center;
+}
+
+#price_drop_list_container{
+  color: rgb(126, 123, 123);
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: -80px;
+  margin-right: 50px;
+}
+
+select{
+  border: none;
+  color:rgb(0, 117, 201);
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 768px)  {
+    
+  .price_drop_list_container{
+    display: none;
+  }
+  select{
+    display: none;
+  }
+
+  label{ 
+    display: none;
+  }
+}
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .buttons_div{
+      margin-right: 130px; 
+  }
+}
+

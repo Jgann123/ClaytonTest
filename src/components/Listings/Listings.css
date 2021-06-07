@@ -1,0 +1,75 @@
+.listings_card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+hr{
+    color: rgb(143, 143, 143);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.image{
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+}
+
+.listings_details{
+    color: rgb(97, 97, 97);
+    margin-left:20px;
+}
+
+.price_range{
+    color: rgb(150, 150, 150);
+    margin-left: 20px;
+}
+
+.content{
+ margin-left: 20px;
+}
+
+
+.card{
+    cursor: pointer;
+    list-style-type: none;
+    font-family: source-sans-pro, Helvetica, Arial, sans-serif;
+    display: flex;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    transition: all .3s linear;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+ .card{
+     display: flex;
+     justify-content: center;
+     width: 340px;
+     margin-left: -40px;
+     
+ }
+ .image{
+     width: 340px;
+ }
+}
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .listings_card{
+      width: 75%;
+  }
+}
