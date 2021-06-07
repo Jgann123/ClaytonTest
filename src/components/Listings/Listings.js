@@ -1,7 +1,9 @@
 import React from "react";
+import listings from "../../data/listings";
 import "./Listings.css";
 
 const Listings = ({ listingsToRender }) => {
+
   return (
  
       <ul className="listings_card">
@@ -14,9 +16,10 @@ const Listings = ({ listingsToRender }) => {
               <div className="content">
                 <h3>{listings.homeName}</h3>
               </div>
-
+            
               <p className="price_range"> Starting in the {listings.startingPrice}</p><hr></hr>
-              <strong className="listings_details"> Home Details: {listings.sqft}sq. ft {listings.beds} beds {listings.baths} baths {listings.beds}</strong>
+              
+              <strong className="listings_details"> Home Details: {listings.sqft}sq. ft {listings.beds} beds {listings.baths} baths {listings.beds} {listings.isMultiSection ? listings.isMultiSection : " "}</strong>
             </li>
           </div>
         ))}
