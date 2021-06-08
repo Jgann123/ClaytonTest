@@ -29,7 +29,7 @@ const Listings = ({ listingsToRender }) => {
             
               <p className="price_range"> Starting in the {listings.startingPrice}</p><hr></hr>
               
-              <strong  className="listings_details"> Home Details: {listings.sqft}sq. ft {listings.beds} beds {listings.baths} baths {listings.beds} <br></br> <span id="multi">{listings.isMultiSection}</span> </strong>
+              <strong  className="listings_details"> Home Details: {listings.sqft}sq. ft {listings.beds} beds {listings.baths} baths  <br></br> <span id="multi">{listings.isMultiSection}</span> </strong>
             </li>
           </div>
         ))}
