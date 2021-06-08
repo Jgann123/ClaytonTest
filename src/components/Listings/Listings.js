@@ -2,7 +2,17 @@ import React from "react";
 import listings from "../../data/listings";
 import "./Listings.css";
 
+
 const Listings = ({ listingsToRender }) => {
+  
+ let isMulti = "";
+ const theRespose = "MultiSectional";
+ {listings.map((entry, index) => {
+    {if(entry.isMultiSection = true && entry.homeName != "The Bordeaux") {
+       return (entry.isMultiSection = theRespose);
+    }
+  };
+  })};
 
   return (
  
@@ -19,7 +29,7 @@ const Listings = ({ listingsToRender }) => {
             
               <p className="price_range"> Starting in the {listings.startingPrice}</p><hr></hr>
               
-              <strong className="listings_details"> Home Details: {listings.sqft}sq. ft {listings.beds} beds {listings.baths} baths {listings.beds} {listings.isMultiSection ? listings.isMultiSection : " "}</strong>
+              <strong  className="listings_details"> Home Details: {listings.sqft}sq. ft {listings.beds} beds {listings.baths} baths {listings.beds} <br></br> <span id="multi">{listings.isMultiSection}</span> </strong>
             </li>
           </div>
         ))}
@@ -28,3 +38,4 @@ const Listings = ({ listingsToRender }) => {
   );
 };
 export default Listings;
+
